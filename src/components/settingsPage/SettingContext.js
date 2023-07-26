@@ -1,6 +1,5 @@
-import React from "react";
-import { defaultValue } from "react";
+import react from "react";
 
-const SettingContext = React.createContext(defaultValue, {});
+const SettingsContext = react.createContext({});
 
-export default SettingContext;
+export default SettingsContext;

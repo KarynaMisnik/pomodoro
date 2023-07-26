@@ -1,16 +1,15 @@
 {
   
 "name": "Pomodoro",
-"version": "1.0",
-"manifest_version": "2",
+"version": "1.0.0",
+"manifest_version": 3,
 "description": "Extension to manage time productivity",
-"browser_action":{
+"action":{
 "default_icon": "pomodoro-icon.png",
 "default_popup": "index.html"
 },
+"permissions":[
+    "scripting"
+]
 
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
 }

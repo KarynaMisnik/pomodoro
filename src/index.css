@@ -21,6 +21,8 @@ body {
   font-family: var(--primary-font);
   color: var(--white);
   font-size: 20px;
+  min-width: 400px;
+  min-height: 600px;
 }
 
 /* main section */
