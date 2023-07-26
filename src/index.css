@@ -3,12 +3,11 @@
   --primary-font: "Montserrat", sans-serif;
 
   /* colors */
-  --dark-blue: #030125;
-  --light-purple: #46458c;
-  --pink: #e8a9a9;
-  --light-pink: #f4d3d3;
-  --red: #d71313;
-  --green: #116530;
+  --dark: #041014;
+  --red: #c7170c;
+  --green: #06e23b;
+  --gray: #b3bab5;
+  --white: #f7ebeb;
 }
 
 * {
@@ -18,11 +17,13 @@
 }
 
 body {
-  background: var(--dark-blue);
+  background: var(--dark);
   font-family: var(--primary-font);
-  color: var(--light-pink);
+  color: var(--white);
+  font-size: 20px;
 }
 
+/* main section */
 main {
   padding-top: 50px;
   width: 100%;
@@ -31,25 +32,35 @@ main {
   text-align: center;
 }
 
+/* buttons */
 button {
   background: transparent;
-  color: var(--light-pink);
+  color: var(--white);
   border: none;
   display: inline-block;
-  width: 100%;
   margin: 1em 0.3em;
-  max-width: 100px;
+  width: 100px;
+  height: auto;
   cursor: pointer;
+}
+
+button p {
+  font-size: 20px;
+  font-family: var(--primary-font);
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--white);
 }
 
 label {
   display: block;
 }
 
+/* sliders */
 .slider {
   height: 42px;
   border: 2px solid var(--red);
-  border-radius: 20px;
+  border-radius: 50px;
   margin: 1em 0;
 }
 
@@ -67,4 +78,15 @@ label {
 
 .green .thumb {
   background: var(--green);
+}
+
+/* go-back button */
+.buttonBack {
+  color: var(--white);
+  text-align: center;
+}
+
+.buttonBack p {
+  font-size: 24px;
+  font-weight: 700;
 }

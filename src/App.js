@@ -1,15 +1,26 @@
 import "./index.css";
 import Timer from "./components/Timer.js";
-import SettingsPage from "./components/SettingsPage";
+import SettingsPage from "./components/settingsPage/SettingsPage";
 import { useState } from "react";
-import SettingContext from "./components/SettingContext";
+import SettingContext from "./components/settingsPage/SettingContext";
 
 function App() {
-  const [showSettings, setShowSettings] = useState({ initialState: false });
+  const [showSettings, setShowSettings] = useState(false);
+  const [workMinutes, setWorkMinutes] = useState(45);
+  const [breakMinutes, setBreakMinutes] = useState(15);
 
   return (
     <main>
-      <SettingContext.Provider value={{ workMinutes: 45, breakMinutes: 15 }}>
+      <SettingContext.Provider
+        value={{
+          showSettings,
+          setShowSettings,
+          workMinutes,
+          breakMinutes,
+          setWorkMinutes,
+          setBreakMinutes,
+        }}
+      >
         {showSettings ? <SettingsPage /> : <Timer />}
       </SettingContext.Provider>
     </main>

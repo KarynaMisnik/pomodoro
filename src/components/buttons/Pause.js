@@ -13,6 +13,7 @@ export default function Pause(props) {
           clipRule="evenodd"
         />
       </svg>
+      <p>Pause</p>
     </button>
   );
 }
