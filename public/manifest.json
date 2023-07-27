@@ -1,13 +1,25 @@
 {
   
 "name": "Pomodoro",
-"version": "1.0.0",
+"version": "0.0.1",
+"author": "Karyna",
 "manifest_version": 3,
 "description": "Extension to manage time productivity",
-"action":{
-"default_icon": "pomodoro-icon.png",
-"default_popup": "index.html"
+"icons": { 
+    "16": "pomodoro-icon.png",
+    "48": "pomodoro-icon.png",
+    "128": "pomodoro-icon.png"
 },
+"action":{
+"default_icon":  {
+  "16": "pomodoro-icon.png",
+    "48": "pomodoro-icon.png",
+    "128": "pomodoro-icon.png"
+},
+"deffault:title": "pomodoro",
+"default_popup":  "index.html"
+},
+ 
 "permissions":[
     "scripting"
 ]
