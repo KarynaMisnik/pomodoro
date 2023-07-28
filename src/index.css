@@ -22,13 +22,12 @@ body {
   color: var(--white);
   font-size: 20px;
   min-width: 400px;
-  min-height: 600px;
+  min-height: 400px;
 }
 
 /* main section */
 main {
   padding-top: 50px;
-  width: 100%;
   max-width: 340px;
   margin: 0 auto;
   text-align: center;

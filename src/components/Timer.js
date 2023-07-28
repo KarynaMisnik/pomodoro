@@ -11,7 +11,7 @@ export default function Timer() {
 
   const [isPaused, setIsPaused] = useState(true);
   const [mode, setMode] = useState("work");
-  const [secondsLeft, setSecondsLeft] = useState(0);
+  const [secondsLeft, setSecondsLeft] = useState();
 
   const secondsLeftRef = useRef(secondsLeft);
   const isPausedRef = useRef(isPaused);
@@ -72,7 +72,7 @@ export default function Timer() {
         styles={buildStyles({
           textColor: "var(--white)",
           strokeLinecap: "butt",
-          textSize: "24px",
+          textSize: "20px",
           trailColor: "var(--gray)",
           pathColor: mode === "work" ? "var(--red)" : "var(--green)",
         })}
